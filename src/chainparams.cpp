@@ -213,10 +213,10 @@ public:
         pchMessageStart[1] = 0xbe;
         pchMessageStart[2] = 0xb4;
         pchMessageStart[3] = 0xd9;
-        pchMessageStartPostAMK[0] = 0xe2;
-        pchMessageStartPostAMK[1] = 0xaa;
-        pchMessageStartPostAMK[2] = 0xc1;
-        pchMessageStartPostAMK[3] = 0xe1;
+        pchMessageStartPostAMK[0] = 0xbb;
+        pchMessageStartPostAMK[1] = 0xcd;
+        pchMessageStartPostAMK[2] = 0xd7;
+        pchMessageStartPostAMK[3] =0xae;
         nDefaultPort = 8855;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 240;
@@ -287,7 +287,7 @@ public:
 //        vSeeds.emplace_back("seed.defichain.io");
   //      vSeeds.emplace_back("seed.mydeficha.in");
 
-        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
+    //    vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
@@ -295,7 +295,7 @@ public:
 
         checkpointData = {
             {
-                {     0, consensus.hashGenesisBlock},
+                {    // 0, consensus.hashGenesisBlock},
           //      { 50000, uint256S("a45e6bf6ae858a287eb39021ea23880b4115c94e882e2b7c0fcfc98c317922cd")},
     //            {100000, uint256S("3acd556dbd5e6e75bf463a15eeeeb54b6eab4a1f28039bdc343cc8c851cce45c")},
       //          {150000, uint256S("46b231d42e5b002852708d48dec119bbc2d550fb67908f1e9f35102c1b45b94d")},
@@ -320,9 +320,9 @@ public:
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 04aed18435a87754fcccb32734a02cf9ee162292489a476334326e8cf8a1079f
-            /* nTime    */ 1611229003,
-            /* nTxCount */ 1091894,
-            /* dTxRate  */ 0.1841462153145931
+      //      /* nTime    */ 1611229003,
+    //        /* nTxCount */ 1091894,
+    //        /* dTxRate  */ 0.1841462153145931
         };
     }
 };
