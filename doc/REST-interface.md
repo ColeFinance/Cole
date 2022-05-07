@@ -3,7 +3,7 @@ Unauthenticated REST Interface
 
 The REST API can be enabled with the `-rest` option.
 
-The interface runs on the same port as the JSON-RPC interface, by default port 8554 for mainnet, port 18554 for testnet,
+The interface runs on the same port as the JSON-RPC interface, by default port 8854 for mainnet, port 18554 for testnet,
 and port 19554 for regtest.
 
 REST Interface consistency guarantees
@@ -115,4 +115,4 @@ Only supports JSON as output format.
 
 Risks
 -------------
-Running a web browser on the same node with a REST enabled bitcoind can be a risk. Accessing prepared XSS websites could read out tx/block data of your node by placing links like `<script src="http://127.0.0.1:8554/rest/tx/1234567890.json">` which might break the nodes privacy.
+Running a web browser on the same node with a REST enabled bitcoind can be a risk. Accessing prepared XSS websites could read out tx/block data of your node by placing links like `<script src="http://127.0.0.1:8854/rest/tx/1234567890.json">` which might break the nodes privacy.
