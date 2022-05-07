@@ -95,7 +95,7 @@ BOOST_AUTO_TEST_CASE(caddrdb_read)
     addrmanUncorrupted.MakeDeterministic();
 
     CService addr1, addr2, addr3;
-    BOOST_CHECK(Lookup("250.7.1.1", addr1, 8555, false));
+    BOOST_CHECK(Lookup("250.7.1.1", addr1, 8855, false));
     // TODO (pvl): CAUTION: Identify source of failure when port is set to 9999
     // as the addrman1.size() below ends up only as 2 instead of 3 - started after
     // port change PR
@@ -104,7 +104,7 @@ BOOST_AUTO_TEST_CASE(caddrdb_read)
 
     // Add three addresses to new table.
     CService source;
-    BOOST_CHECK(Lookup("252.5.1.1", source, 8555, false));
+    BOOST_CHECK(Lookup("252.5.1.1", source, 8855, false));
     BOOST_CHECK(addrmanUncorrupted.Add(CAddress(addr1, NODE_NONE), source));
     BOOST_CHECK(addrmanUncorrupted.Add(CAddress(addr2, NODE_NONE), source));
     BOOST_CHECK(addrmanUncorrupted.Add(CAddress(addr3, NODE_NONE), source));

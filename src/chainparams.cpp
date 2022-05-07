@@ -217,7 +217,7 @@ public:
         pchMessageStartPostAMK[1] = 0xaa;
         pchMessageStartPostAMK[2] = 0xc1;
         pchMessageStartPostAMK[3] = 0xe1;
-        nDefaultPort = 8555;
+        nDefaultPort = 8855;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 240;
         m_assumed_chain_state_size = 3;
@@ -438,7 +438,7 @@ public:
         pchMessageStartPostAMK[2] = pchMessageStart[2] = 0x09;
         pchMessageStartPostAMK[3] = pchMessageStart[3] = 0x07;
 
-        nDefaultPort = 18555;
+        nDefaultPort = 18855;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 30;
         m_assumed_chain_state_size = 2;

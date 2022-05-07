@@ -56,8 +56,8 @@ Read more at: https://defichain.io
 
 #### Default ports
 
-- Mainnet: P2P - 8555, JSON-RPC - 8854
-- Testnet: P2P - 18555, JSON-RPC - 18554
+- Mainnet: P2P - 8855, JSON-RPC - 8854
+- Testnet: P2P - 18855, JSON-RPC - 18554
 - Regtest: P2P - 19555, JSON-RPC - 19554
 
 #### Customization
